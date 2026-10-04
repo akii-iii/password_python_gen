@@ -5,10 +5,8 @@ digits = '012345'
 lowercase_letters = 'abcdefghijklmnopqrstuvwxyz'
 uppercase_letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 punctuation = '!#$%&*+-=?@^_.'
-
-
 need = int(input('How many passwords?'))
-# детали
+
 def passwords(chars):
     length = int(input('Length of this password? '))
     num = input('Any numbers in this password? y = yes/ n = no ')
@@ -40,6 +38,8 @@ def passwords(chars):
     random.shuffle(chars)
     print(''.join(chars))
 chars = ''
+# детали
+
 passwords(chars)
 for _ in range(need - 1):
     passwords(chars)
